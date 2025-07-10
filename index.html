@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header"
+    style="position: fixed; top: 0; left: 0; width: 100%; padding: 2rem 9%; background: #2C2222; display: flex; justify-content: space-between; align-items: center; z-index: 100;">
+    <a href="#" class="logo">Welcome</a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <nav class="navigationbar">
+      <a href="#home" class="active">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#contact">CONTACT</a>
+      <a href="#myfriends">MY FRIENDS</a>
+
+    </nav>
+  </header>
+
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3 style="font-size: 3.2rem; font-weight: 700;">Hello, It's Me!</h3>
+      <h1>Aishee Mukherjee</h1>
+      <h3 style="font-size: 3.2rem; font-weight: 700;">I am a <span style="color: #FFC1C1;">Web Developer</span> </h3>
+      <p>I'm an aspiring Full Stack Web Developer who's currently pursuing her Bachelor's in Computer Science and
+        Engineering. With a deep curiosity for web security and generative AI, I’m eager to explore these fields in
+        greater depth as well. As an active and fast learner, I thrive on continuous growth and problem-solving.</p>
+      <div class="social-media">
+        <a href="#"><i class='bx bxl-linkedin'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class='bx bxl-youtube'></i></a>
+        <a href="#"><i class='bx bxl-github'></i></a>
+      </div>
+      <a href="#" class="button">Download Resume</a>
+    </div>
+    <div class="homeimg">
+      <img src="myAvatar.png" alt="">
+    </div>
+  </section>
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="myav.png" alt="">
+    </div>
+    <div class="aboutcont">
+      <h2 class="heading">About <span style="color: #FFC1C1;">Me</span></h2>
+      <h3>Frontend Developer</h3>
+      <p>I am a dedicated and a hardworking student who is currently pursuing her B.Tech in Computer Science and
+        Engineering. I believe in learning to grow and being a fast learner, I tend to make fast progress in fields I
+        work on. Currently, I am pushing myself to become a professional Full Stack Web Developer who not only makes
+        visually appealing websites, but also ensures user safety and an overall good user experience </p>
+      <a href="#" class="button">Read More</a>
+    </div>
+  </section>
+  <section class="projects" id="projects">
+    <h2 class="heading">My <span style="color: #FFC1C1;">Projects</span style="color: #FFC1C1;"></h2>
+    <div class="projectcontainer">
+      <div class="projectbox"><i class='bx bx-cloud-snow'></i>
+        <h3>Weather Forecast</h3>
+        <p>A simple app that shows real-time weather updates using a weather API. It displays temperature, conditions,
+          and a weekly forecast based on user location. Ideal for learning API integration and clean UI design.</p>
+        <a href="#" class="button">Read More</a>
+      </div>
+      <div class="projectbox"><i class='bx bx-music'></i>
+        <h3>Music App</h3>
+        <p>A music app that lets users play, pause, and skip songs from a local playlist. It features a clean interface
+          with song details and simple controls.</p>
+        <a href="#" class="button">Read More</a>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+
+    <h2 class="heading">Contact <span style="color: #FFC1C1;">Me</span></h2>
+    <form id="contactForm">
+      <div class="inputbox">
+        <input type="text" id="fullName" placeholder="Full Name">
+        <input type="email" id="email" placeholder="Email Address">
+      </div>
+      <div class="inputbox">
+        <input type="number" id="contactNumber" placeholder="Contact Number">
+        <input type="text" id="subject" placeholder="Subject">
+      </div>
+      <textarea id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+      <input type="submit" value="Send Message" class="button">
+    </form>
+    <div id="errorMessages"></div>
+  </section>
+  <section class="myfriends" id="myfriends">
+    <h2 class="heading">My <span style="color: #FFC1C1;">Friends</span></h2>
+    <div id="userData" class="projectcontainer">
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footertext">
+      <p>Copyright &copy; Aishee Mukherjee | All Rights Reserved </p>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
